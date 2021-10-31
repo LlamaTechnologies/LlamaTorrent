@@ -1,0 +1,7 @@
+# bin folder
+/bin/**
+!/bin/README.md
+
+# extern folder
+/extern/**
+!/extern/README.md

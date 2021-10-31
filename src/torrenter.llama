@@ -1,0 +1,9 @@
+
+/**
+ * Update_Torrents
+ * This go through the torrents list
+ * download them and update their status
+ */
+fn Update_Torrents() error {
+  ret nil
+}

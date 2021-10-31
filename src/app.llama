@@ -1,0 +1,22 @@
+#load "gui.llama"
+#load "torrenter.llama"
+
+_should_close := false
+
+fn Run() s32 {
+  err := nil
+  
+  loop false == _should_close {
+    err = Update_Torrents()
+    if err {
+        ret err.code
+    }
+
+    _should_close, err = Upadate_GUI()
+    if err {
+        ret err.code
+    }
+  }
+
+  ret 0
+}

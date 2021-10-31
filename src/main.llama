@@ -1,0 +1,15 @@
+#load "initializer.llama"
+#load "app.llama"
+
+#fntype MainFn
+#main
+fn LlamaTorrent(args []String) s32 {
+  config := GetConfig(args)
+
+  err := Init(config)
+  if err != nil {
+    ret err.code
+  }
+
+  ret Run()
+}
